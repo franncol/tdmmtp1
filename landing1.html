@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <title>Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera pagina web">
+    <meta name="language" content="es">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<script src="form.js"></script>
+
+
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">✕</span>
+            <img src="imagenes/Group 20.png" alt="">
+            <h2 class="tituloform" style="font-size: 60px; font-weight: 300;">RESERVÁ TU LUGAR</h2>
+            <h2 class="tituloform" style="font-size: 35px; font-weight: 300;">Y DISFRUTÁ LA NOCHE</h2>
+            <h3 class="subform" style="font-weight: 300;">Completá los datos para sumarte y recibir
+                tu entrada</h3>
+            <input type="text" placeholder="Nombre completo">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Teléfono">
+            <select>
+                <option value="">Elegí una película</option>
+                <option value="lalaland">La La Land</option>
+                <option value="parasite">Parasite</option>
+                <option value="interstellar">Interstellar</option>
+                <option value="desaparicion">La hora de la desaparición</option>
+                <option value="amores">Amores Materialistas</option>
+                <option value="amores">Joker</option>
+                <option value="amores">Oppenheimer</option>
+                <option value="amores">Inception</option>
+                <option value="amores">Titanic</option>
+            </select>
+            <button class="btn" onclick="confirmarReserva()">CONFIRMAR</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-feedback">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarFeedback()">✕</span>
+            <img src="imagenes/Group 20.png" alt="">
+            <h2 class="tituloform" style="font-size: 60px; font-weight: 300;">¡RESERVA HECHA!</h2>
+            <h3 class="tituloform" style="font-size: 30px; font-weight: 300;">NOS VEMOS EL 16 DE MAYO</h3>
+            <p style="text-align: center; font-size: 20px; font-weight: 300;">¡Gracias! Tu reserva fue guardada con
+                éxito.</p>
+            <p style="text-align: center; font-size: 18px; font-weight: 300;">Te enviamos los detalles por correo.</p>
+            <button class="btn" onclick="cerrarFeedback()">CERRAR</button>
+        </div>
+    </div>
+    <div class="fondo-fijo"></div>
+    <header>
+        <img src="imagenes/logo.png" alt="cine">
+
+    </header>
+    <section class="seccion1">
+
+        <div class="seccion1-contenido">
+            <h1 style="font-size: 70px;font-weight: 300;">CINE BAJO LAS ESTRELLAS</h1>
+            <h2 style="font-size: 28px;font-weight: 300;">VOS ELEGÍS LA PELÍCULA. NOSOTROS EL ESCENARIO</h2>
+            <h3 style="font-size: 24px;font-weight: 300;">SÁBADO 16/05 - 20:30 HS - REPÚBLICA DE LOS NIÑOS</h3>
+            <button class="btn" onclick="abrirModal()">RESERVÁ AQUÍ</button>
+        </div>
+    </section>
+
+    <section class="seccion2">
+        <h2 style="font-size: 48px;font-weight: 300;">MÁS VOTADAS</h2>
+
+        <div class="peliculas">
+            <div class="pelicula">
+                <img class="normal" src="imagenes/Property 1=La la land.png" alt="Película 1">
+                <img class="hover" src="imagenes/Property 1=La la land Sinopsis.png" alt="Película 1 hover">
+            </div>
+            <div class="pelicula">
+                <img class="normal" src="imagenes/Property 1=Parasite.png" alt="Película 2">
+                <img class="hover" src="imagenes/Property 1=Parasite Sinopsis.png" alt="Película 2 hover">
+            </div>
+            <div class="pelicula">
+                <img class="normal" src="imagenes/INTERESTELLAR.png" alt="Película 3">
+                <img class="hover" src="imagenes/INTERESTELLAR SINOPSIS.png" alt="Película 3 hover">
+            </div>
+            <div class="pelicula">
+                <img class="normal" src="imagenes/HORA.png" alt="Película 3">
+                <img class="hover" src="imagenes/HORA SINOPSIS.png" alt="Película 3 hover">
+            </div>
+            <div class="pelicula">
+                <img class="normal" src="imagenes/AMORES.png" alt="Película 3">
+                <img class="hover" src="imagenes/AMORES SINOPSIS.png" alt="Película 3 hover">
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion3">
+        <h2 style="font-size: 48px;font-weight: 300;">VIVÍ LA EXPERIENCIA COMPLETA</h2>
+        <p style="font-size: 20px;">Cine al aire libre y algo rico para acompañar cada momento de la noche</p>
+
+        <div class="seccion3-imagenes">
+            <div class="seccion3-item">
+                <img src="imagenes/Group 16.png">
+                <h3 style="font-size: 38px; font-weight: 300;">POCHOCLOS RECIEN HECHOS</h3>
+                <p>El clásico que no puede faltar en una noche de pelis.</p>
+            </div>
+            <div class="seccion3-item">
+                <img src="imagenes/Group 17.png">
+                <h3 style="font-size: 38px; font-weight: 300;">HAMBURGUESAS Y PAPAS FRITAS</h3>
+                <p>La combinación perfecta para una noche completa.</p>
+            </div>
+            <div class="seccion3-item">
+                <img src="imagenes/Group 19.png">
+                <h3 style="font-size: 38px; font-weight: 300;">PIZZAS AL PASO</h3>
+                <p>Porciones recién hechas para no perderte ni un minuto.</p>
+            </div>
+
+        </div>
+        <img src="imagenes/off.png" alt="">
+    </section>
+
+
+    <section class="seccion4">
+        <div class="seccion4-titulo">
+            <h2 style="font-size: 48px;font-weight: 300;">¿CÓMO FUNCIONA?</h2>
+            <p style="font-size: 20px;font-weight: 300;">Enterate como participar</p>
+        </div>
+
+        <div class="seccion4-imagenes">
+            <img src="imagenes/Group 7.png" alt="">
+        </div>
+
+        <div class="seccion4-items">
+            <div class="seccion4-item">
+                <img src="imagenes/Group 12.png">
+            </div>
+            <div class="seccion4-item">
+                <img src="imagenes/Group 13.png">
+            </div>
+            <div class="seccion4-item">
+                <img src="imagenes/Group 14.png">
+            </div>
+        </div>
+    </section>
+
+
+   
+    <section class="seccion5"><button class="btn" onclick="abrirModal()">RESERVÁ AQUÍ</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-izq">
+            <div class="footer-item">
+                <img src="imagenes/Frame (1).png">
+                <p>UBICACIÓN<br>LA PLATA, BUENOS AIRES. CAMINO GRAL. BELGRANO ESQ. 500</p>
+            </div>
+            <div class="footer-item">
+                <img src="imagenes/Frame (2).png">
+                <p>DÍAS Y HORARIOS<br>SÁBADOS - 20:30 HS</p>
+            </div>
+            <div class="footer-item">
+                <img src="imagenes/Frame (3).png">
+                <p>CONTACTO<br>CINEBAJOLESTRELLAS@GMAIL.COM</p>
+            </div>
+        </div>
+
+        <div class="footer-centro">
+            <img src="imagenes/logo.png" alt="cine">
+            <p>© 2026 CINE BAJO LAS ESTRELLAS</p>
+        </div>
+
+        <div class="footer-der">
+            <div>
+                <p style="text-align: left; margin: 0 0 8px 0;">REDES</p>
+                <div class="icons">
+                    <img src="imagenes/instagram 1.png">
+                    <img src="imagenes/tiktok 1.png">
+                    <img src="imagenes/facebook 1.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
