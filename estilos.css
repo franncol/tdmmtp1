@@ -1,0 +1,626 @@
+@font-face {
+    font-family: "Bebas";
+    src: url(./fuentes/BebasNeue-Regular.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(./fuentes/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+html {
+    background-color: #010006;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+p {
+    font-family: "Inter";
+}
+
+header {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.fondo-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("imagenes/IMG_4908.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.contenedor {
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.btn {
+    background-color: #c20202;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: "Bebas";
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #870202;
+}
+
+li,
+a,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bebas";
+    color: white;
+}
+
+
+.seccion1 {
+    background-image: url("imagenes/Rectangle 21.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+
+.seccion1-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.seccion1 h3 {
+    padding-top: 50px;
+}
+
+.seccion2 {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.peliculas {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.pelicula {
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+    max-width: 500px;
+    position: relative;
+}
+
+.pelicula img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.pelicula .normal {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.pelicula .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.05);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.pelicula:hover .hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.pelicula:hover .normal {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.seccion3 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 120px;
+}
+
+
+.seccion3-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.seccion3-imagenes div {
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.seccion3-imagenes img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+
+}
+
+.reserva {
+    height: auto !important;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+
+.seccion4 {
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.seccion4-imagenes {
+    width: 100%;
+
+}
+
+.seccion4-imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+.seccion4-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 20px;
+}
+
+.seccion4-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.seccion4-item img {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.seccion5 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.seccion5 .btn {
+    padding: 20px 60px;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: #c20202;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.footer p {
+    font-family: "Bebas";
+}
+
+.footer-izq {
+    text-align: left;
+    flex: 1;
+}
+
+.footer-centro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-der {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    margin: 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    background-color: #111;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 600px;
+}
+
+.modal-contenido img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.modal-contenido input,
+.modal-contenido select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.modal-contenido select {
+    background-color: white;
+    color: black;
+}
+
+.cerrar {
+    color: red;
+    text-align: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tituloform {
+    text-align: center;
+    margin: 0;
+}
+
+.subform {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ── LAPTOP ── */
+@media (max-width: 1200px) {
+    
+    
+    .seccion1-contenido h1 {
+        font-size: 50px !important;
+    }
+
+    .seccion1-contenido h2 {
+        font-size: 22px !important;
+    }
+
+    .seccion1-contenido h3 {
+        font-size: 18px !important;
+    }
+
+    .peliculas {
+
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .seccion3-imagenes {
+        gap: 10px;
+    }
+
+    .seccion3-imagenes img {
+        width: 100%;
+        height: auto;
+    }
+
+    .seccion4-items {
+        gap: 20px;
+    }
+
+    .seccion5 {
+        padding: 60px 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .modal-contenido {
+        min-width: 500px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 0 15px;
+    }
+
+    .logo {
+        content: url("imagenes/logomobile.png");
+    }
+
+    .seccion1 {
+        min-height: 70vh;
+    }
+
+    .seccion1-contenido h1 {
+        font-size: 40px !important;
+    }
+
+    .seccion1-contenido h2 {
+        font-size: 20px !important;
+        margin: 0 !important;
+    }
+
+    .seccion1-contenido h3 {
+        padding-top: 50px;
+        font-size: 20px !important;
+    }
+
+    .btn {
+        font-size: 25px;
+        padding: 10px 30px;
+    }
+
+
+    .seccion2 {
+        padding: 30px 0;
+    }
+
+    .seccion2 h2 {
+        font-size: 34px !important;
+    }
+
+    .seccion2 p {
+        font-size: 16px !important;
+    }
+
+    .peliculas {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .pelicula {
+        min-width: 40vw;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .pelicula:nth-child(1) .normal {
+        content: url("imagenes/lalalandmobile.png");
+    }
+
+    .pelicula:nth-child(2) .normal {
+        content: url("imagenes/parasitemobile.png");
+    }
+
+    .pelicula:nth-child(3) .normal {
+        content: url("imagenes/interestellarmobile.png");
+    }
+
+    .pelicula:nth-child(4) .normal {
+        content: url("imagenes/horamobile.png");
+    }
+
+    .pelicula:nth-child(5) .normal {
+        content: url("imagenes/amoresmobile.png");
+    }
+
+
+    .seccion3 {
+        padding: 30px 0;
+    }
+
+    .seccion3 h2 {
+        font-size: 34px !important;
+    }
+
+    .seccion3 h3 {
+        font-size: 24px !important;
+    }
+
+    .seccion3 p {
+        font-size: 16px !important;
+    }
+
+    .seccion3-imagenes {
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .seccion3-imagenes div {
+        width: 100%;
+    }
+
+    .seccion3-imagenes img {
+        width: 100%;
+        height: auto;
+        max-width: 4000px;
+
+    }
+
+    .seccion4 {
+        padding: 30px 0;
+    }
+
+    .seccion4 h2 {
+        font-size: 34px !important;
+    }
+
+    .seccion4 h3 {
+        font-size: 24px !important;
+    }
+
+    .seccion4 p {
+        font-size: 16px !important;
+    }
+
+  .seccion4-imagenes {
+    width: 100%;
+    margin: 0;
+}
+
+    .seccion4-imagenes img {
+        content: url("imagenes/Group 22.png");
+    }
+
+    .seccion4-items {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 60px;
+    }
+
+    .seccion4-item img {
+
+        width: 100%;
+        height: auto;
+        max-height: 100px;
+        object-fit: contain;
+    }
+
+    .seccion5 {
+        padding: 40px 0;
+    }
+
+    .seccion5 .btn {
+        font-size: 30px;
+        padding: 10px 30px;
+    }
+
+    .reserva {
+        padding-bottom: 50px;
+
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-izq,
+    .footer-centro,
+    .footer-der {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-der>div>p {
+        display: none;
+    }
+
+    .footer-item {
+        justify-content: center;
+    }
+
+    .footer-item p {
+        text-align: center;
+    }
+
+
+    .modal-contenido {
+        min-width: unset;
+        width: 90vw;
+        padding: 20px;
+    }
+
+    .tituloform {
+        font-size: 36px !important;
+        margin: 0;
+    }
+}
